@@ -98,8 +98,16 @@ footer {
 }
 */
 
+.hidden {
+  display: none;
+}
+
 .italic {
   font-style: italic;
+}
+
+.label {
+  text-transform: capitalize;
 }
 
 /*
@@ -186,3 +194,11 @@ footer {
 /* MEDIA QUERIES
 /*******************************************/
 
+/* @ 800px width to desktop ??? (probably
+  use flex
+  two-columns: API Link & Search
+  one column: Search results
+*/
+
+/* prefers light mode
+/* light/dark toggle

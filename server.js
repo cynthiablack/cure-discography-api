@@ -236,6 +236,10 @@ app.get('/', (request, response)=>{
     response.sendFile(__dirname + '/index.html')
 })
 
+app.get('/api', (request, response)=>{
+    response.json(discography)
+})
+
 app.get('/api/:album', (request, response)=>{
     const album = request.params.album.toLowerCase()
     if (discography[album]){
