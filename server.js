@@ -2,6 +2,8 @@ const express = require('express')
 const app = express()
 const PORT = 1978
 
+app.use(express.static('public'));
+
 const discography = {
 //studio albums
     'three imaginary boys':{

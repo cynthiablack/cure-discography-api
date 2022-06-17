@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@gouch/to-title-case": "^2.2.1",
     "express": "^4.18.1"
   }
 }

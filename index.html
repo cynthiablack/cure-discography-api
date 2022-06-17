@@ -7,7 +7,7 @@
     <title>The Cure's Discography API</title>
 
     <!-- external links -->
-	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="/style.css" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto&display=swap" rel="stylesheet">
@@ -23,7 +23,6 @@
         <h2>API Link</h2>
             <p>Please use URL to access the API</p>
         <h2>Search the Catalog</h2>
-            <p class="italic">All fields are optional.</p>
             <p>Enter an album title.</p>
         <form>
             <input placeholder="album title" label="album title" name="album">
@@ -31,7 +30,7 @@
         </form>
         <h2 class="hidden">Your Results</h3>
             <ul>
-                <li>Album:</li>
+                <li class="album">Album:</li>
                 <li>Category:</li>
                 <li>Release Year:</li>
                 <li>Label:</li>
@@ -41,6 +40,7 @@
         <p><a href="https://github.com/cynthiablack/cure-discography-api">Github repo</a></p>
         <p>Background image <cite><a href="https://commons.wikimedia.org/wiki/File:Seal_%C3%A4mblikud_magavad.jpg">Lindi Nature Reserve</a></cite> by Aiver Oja. Photographed in 2014. Licensed under CC BY-SA 3.0 EE</p>
     </footer>
-    <script src="js/main.js"></script>
+    <script src="static/main.js"></script>
+    <script src="to-title-case.js"></script>
 </body>
 </html>
