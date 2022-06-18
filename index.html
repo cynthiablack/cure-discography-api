@@ -17,9 +17,18 @@
         <h1>The Cure's Discography</h1>
             <p>Access the public API or search information about The Cure's live and studio albums.</p>
         <h2>About this API</h2>
-            <p>This is a public API containing the catalog of The Cure's live and studio albums. 
+        <details>
+        <summary>API description and instructions</summary>
+            <p>
+                This is a public API containing the catalog of The Cure's live and studio albums. 
                 The catalog includes album title, release year, label, and album category (studio, live, compilation, or extended play).
-                Users can access the API directly or by using the search field in the Search the Catalog section of this page.</p>
+                Users can access the API directly or by using the search field in the Search the Catalog section of this page.
+            </p>
+            <p>
+                Data for individual albums may be accessed by adding the album name to the end of the API string after a forward slash. For example, to return
+                    the data associated with "Faith", the user would add /faith to the end of the URL; <a href="https://cure-discography.herokuapp.com/api">cure-discography.herokuapp.com/api</a> becomes <a href="https://cure-discography.herokuapp.com/api/faith">https://cure-discography.herokuapp.com/api/faith</a>.
+            </p>
+        </details>
         <h2>API Link</h2>
             <p>Please use <a href="https://cure-discography.herokuapp.com/api">https://cure-discography.herokuapp.com/api</a> to access the API</p>
         <h2>Search the Catalog</h2>
