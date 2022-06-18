@@ -96,12 +96,11 @@ footer {
 .album {
   'Make me a headline'.toTitleCase() // returns: Make Me a Headline
 }
-*/
-
+/*
 .hidden {
   display: none;
 }
-
+*/
 .italic {
   font-style: italic;
 }

@@ -1,8 +1,10 @@
 const express = require('express')
 const app = express()
+const cors = require('cors')
 const PORT = 1978
 
 app.use(express.static('public'));
+app.use(cors())
 
 const discography = {
 //studio albums
