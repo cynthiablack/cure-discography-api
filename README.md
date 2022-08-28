@@ -3,33 +3,27 @@ The Cure's Discogrphy API is a searchable public API containing the catalog of T
 
 **Link to project:** https://cure-discography.herokuapp.com/
 
-![alt tag](http://placecorgi.com/1200/650)
+![alt tag](https://github.com/cynthiablack/cure-discography-api/blob/main/CureAPI.png)
 
 ## How It's Made:
 
 **Tech used:** HTML, CSS, JavaScript, Node, Express
 
-Here's where you can go to town on how you actually built this thing. Write as much as you can here, it's totally fine if it's not too much just make sure you write *something*. If you don't have too much experience on your resume working on the front end that's totally fine. This is where you can really show off your passion and make up for that ten fold.
+The Cure's Discography API is a public API containing a partial catalog of music released by The Cure. The catalog includes album title, release year, label, and album category (studio, live, compilation, or extended play). Users can access the API directly or by using the search field to return results for individual releases by album name.
 
-
-
-This is a public API containing the catalog of 
-        The catalog includes album title, release year, label, and album category (studio, live, compilation, or extended play).
-        Users can access the API directly or by using the search field in the Search the Catalog section of this page.
-
-## Optimizations
-*(optional)*
-
-You don't have to include this section but interviewers *love* that you can not only deliver a final product that looks great but also functions efficiently. Did you write something then refactor it later and the result was 5x faster than the original implementation? Did you cache your assets? Things that you write in this section are **GREAT** to bring up in interviews and you can use this section as reference when studying for technical interviews!
+The API consists of a JSON object (discography) with subobjects for each release, all hard-code in the server.js file. The /api url allows access to the full discography data set, while main.js controls how search results are relayed to the DOM and automatically toggles a 'hidden' class when results are available.
 
 ## Planned Enhancements
 
 - Add singles
 - Add songlist catalog
 - Add search fields for: release year, covers, song length, songwriter, country of release, chart position
+- Refactor main.js search functionality to return search results for partial entries (i.e, searching for 'top' would return data for 'The Top')
+- evaluate efficiency of storing data in database vs. hard-coded server.js object
 
 ## Lessons Learned:
 
-No matter what your experience level, being an engineer means continuously learning. Every time you build something you always have those *whoa this is awesome* or *fuck yeah I did it!* moments. This is where you should share those moments! Recruiters and interviewers love to see that you're self-aware and passionate about growing.
+Punctuation matters! I wrote my original fetch request with single quotation marks (' ') instead of backticks (` `). When I added a template literal to the url to handle user input for the search query, the fetch request failed to return valid data. Although the error I received suggested my JSON data was missing brackets, if I'd more carefully read my fetch request, I would not have spent time reviewing every line of server.js to ensure the JSON object was properly coded.
 
 ## License
+MIT
