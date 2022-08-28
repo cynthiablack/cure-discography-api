@@ -1,4 +1,4 @@
-# My Awesome Project
+# The Cure's Discography API
 The Cure's Discogrphy API is a searchable public API containing the catalog of The Cure's live and studio albums along with compilations, and extended play releases.
 
 **Link to project:** https://cure-discography.herokuapp.com/
