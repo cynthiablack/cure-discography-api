@@ -7,6 +7,9 @@ async function apiRequest() {
         const data = await response.json()
         console.log(data)
 
+        let element = document.querySelector('#results');
+        element.classList.remove('hidden');
+
         if (data.title) {
             document.getElementById('album').innerText = data.title;
         }

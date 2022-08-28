@@ -13,6 +13,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="wrapper">
     <section>
         <h1>The Cure's Discography</h1>
             <p>Access the public API or search information about The Cure's live and studio albums.</p>
@@ -36,19 +37,20 @@
             <input placeholder="album title" label="album title" name="album">
             <button>Submit</button>
     </section>
-    <section class="hidden">
-        <h2 id="results">Your Results</h3>
+    <section class="hidden" id="results">
+        <h2>Your Results</h3>
             <ul>
-                <li id="album" class="capitalize"></li>
-                <li id="category"></li>
-                <li id="year"></li>
-                <li id="label" class="capitalize"></li>
+                <li><span class="italic">album title: </span><span id="album" class="capitalize"></span></li>
+                <li><span class="italic">album category: </span><span id="category"></span></li>
+                <li><span class="italic">release year: </span><span id="year"></span></li>
+                <li><span class="italic">label: </span><span id="label" class="capitalize"></span></li>
             </ul>
     </section>
     <footer>
         <p><a href="https://github.com/cynthiablack/cure-discography-api">Github repo</a></p>
         <p>Background image <cite><a href="https://commons.wikimedia.org/wiki/File:Seal_%C3%A4mblikud_magavad.jpg">Lindi Nature Reserve</a></cite> by Aiver Oja. Photographed in 2014. Licensed under CC BY-SA 3.0 EE</p>
     </footer>
+</div>
     <script src="./public/main.js"></script>
 </body>
 </html>

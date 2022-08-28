@@ -64,7 +64,7 @@ const discography = {
 
     'wild mood swings':{
         'released': '1996',
-        'album category': 'studio',
+        'category': 'studio',
         'label': 'Fiction',
     },
 
