@@ -7,8 +7,7 @@ async function apiRequest() {
         const data = await response.json()
         console.log(data)
 
-
-        document.getElementById('album').innerText = data.toTitleCase();
+        document.getElementById('album').innerText = album;
 
 
     }

@@ -2,7 +2,6 @@ const express = require('express')
 const app = express()
 const cors = require('cors')
 const PORT = 1978
-const toTitleCase = require('@gouch/to-title-case')
 
 app.use(cors())
 
@@ -39,6 +38,7 @@ const discography = {
     },
 
     'the head on the door':{
+        'title': 'The Head on the Door',
         'released': '1985',
         'album category': 'studio',
         'label': 'Fiction',
@@ -143,6 +143,7 @@ const discography = {
     },
 
     'standing on a beach':{
+        'title': 'Standing on a Beach',
         'released': '1986',
         'album category': 'compilation',
         'label': 'Fiction',
@@ -167,6 +168,7 @@ const discography = {
     },
 
     'join the dots':{
+        'title': 'Join the Dots',
         'released': '2004',
         'album category': 'compilation',
         'label': 'Fiction',
@@ -192,6 +194,7 @@ const discography = {
     },
 
     'half an octopuss & quadpus':{
+        'title': 'Half an Octopuss & Quadpus',
         'released': '1986',
         'album category': 'extended play',
         'label': 'Fiction',
