@@ -7,18 +7,19 @@ async function apiRequest() {
         const data = await response.json()
         console.log(data)
 
-        document.getElementById('album').innerText = album;
+        if (data.title) {
+            document.getElementById('album').innerText = data.title;
+        }
+        else {
+            document.getElementById('album').innerText = album;
+        }
 
+        document.getElementById('category').innerText = data.category;
+        document.getElementById('year').innerText = data.released;
+        document.getElementById('label').innerText = data.label;
 
     }
     catch(error) {
         console.log(error)
     }
 }
-
-/*
-                <li id="album" class="capitalize"></li>
-                <li id="category"></li>
-                <li id="year"></li>
-                <li id="label" class="capitalize"></li>
-*/
