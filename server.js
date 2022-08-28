@@ -4,6 +4,7 @@ const cors = require('cors')
 const PORT = 1978
 
 app.use(cors())
+app.use(express.static(__dirname));
 
 const discography = {
 //studio albums
